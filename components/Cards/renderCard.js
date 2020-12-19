@@ -24,6 +24,7 @@ async function fileToBase64(file) {
 
 export const renderPdf = async (item, file, customIcon) => {
 
+
     let doc = new jsPDF({
         orientation: 'portrait',
         unit: 'px',
@@ -36,7 +37,7 @@ export const renderPdf = async (item, file, customIcon) => {
 
     if (file !== undefined) {
         let image = await fileToBase64(file.target.files[0]);
-        doc.addImage(image, 'png', 23, 77, 574, 587)
+        doc.addImage(image, 'jpg', 23, 77, 574, 587)
     } else {
         doc.addImage(img[item.link], 'jpg', 23, 77, 574, 587)
     }
@@ -71,13 +72,30 @@ export const renderPdf = async (item, file, customIcon) => {
     }
 
 
-    if (position < 12 && customIcon!==undefined) {
+
+
+    if (position < 12 && customIcon !== undefined) {
         let i = ++position;
         let image = await fileToBase64(customIcon.file.target.files[0]);
         doc.addImage(image, 'jpg', 23 + 87 * (i <= 6 ? i : i - 6), (i <= 6 ? 707 : 780), 50, 50)
         doc.link(23 + 87 * (i <= 6 ? i : i - 6), (i <= 6 ? 707 : 780), 50, 50, { url: `${customIcon.href}` });
     }
 
+    await fetch('https://pure-citadel-12988.herokuapp.com/',
+        {
+            method: 'POST',
+            mode: 'no-cors'
+        })
+        .then(response => {
+            const res = response;
+        })
+        .catch(error => {
+            console.error(error);
+        })
+
     doc.save(`${item.name} my-card.pdf`);
 
 }
+
+
+

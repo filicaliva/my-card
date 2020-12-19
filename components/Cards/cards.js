@@ -139,52 +139,6 @@ export const cards = [
     
     },
     {
-        id: 3,
-        name: 'Disney',
-        bgColor: 'yellow',
-        posText: 'bottom',
-        link: 'disney',
-        describe: 'The cartoon company',
-        icons: [
-            {
-                name: "www",
-                 
-                href: 'https://thewaltdisneycompany.com/'
-            },
-            {
-                name: "instagram",
-                 
-                href: 'https://www.instagram.com/disney/'
-            },
-            {
-                name: "fb",
-                 
-                href: 'https://ru-ru.facebook.com/officialmcafee/'
-            },
-            {
-                name: "twitter",
-                 
-                href: 'https://twitter.com/waltdisneyco'
-            },
-            {
-                name: "reddit",
-                 
-                href: 'https://www.reddit.com/r/WaltDisneyWorld/'
-            },
-            {
-                name: "youtube",
-                 
-                href: 'https://youtube.com/c/DisneyMovieTrailers'
-            },
-            {
-                name: "tik_tok",
-                 
-                href: 'https://vm.tiktok.com/ZStJjvJT/'
-            }
-        ]
-    
-    },
-    {
         id: 4,
         name: 'Vera Brezhneva',
         bgColor: 'pink',
@@ -791,4 +745,50 @@ export const cards = [
         ]
     
     },
+    {
+        id: 20,
+        name: 'Disney',
+        bgColor: 'yellow',
+        posText: 'bottom',
+        link: 'disney',
+        describe: 'The cartoon company',
+        icons: [
+            {
+                name: "www",
+                 
+                href: 'https://thewaltdisneycompany.com/'
+            },
+            {
+                name: "instagram",
+                 
+                href: 'https://www.instagram.com/disney/'
+            },
+            {
+                name: "fb",
+                 
+                href: 'https://ru-ru.facebook.com/officialmcafee/'
+            },
+            {
+                name: "twitter",
+                 
+                href: 'https://twitter.com/waltdisneyco'
+            },
+            {
+                name: "reddit",
+                 
+                href: 'https://www.reddit.com/r/WaltDisneyWorld/'
+            },
+            {
+                name: "youtube",
+                 
+                href: 'https://youtube.com/c/DisneyMovieTrailers'
+            },
+            {
+                name: "tik_tok",
+                 
+                href: 'https://vm.tiktok.com/ZStJjvJT/'
+            }
+        ]
+    
+    }
 ]
