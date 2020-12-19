@@ -59,11 +59,12 @@ export default function Creating() {
         if (window.pageXOffset <= 680) {
             for (let i = 0; i < 4; i++) {
                 if (id === 3 + 5 * i || id === 4 + 5 * i) {
-                    return setPosLeft('0px')
+                    setPosLeft('0px')
+                    break;
                 }
             }
         }
-        return setPosLeft(null)
+        setPosLeft(null)
 
     }
 
