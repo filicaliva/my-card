@@ -8,8 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "jspdf": "^2.2.0",
     "next": "^10.0.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "sass": "^1.30.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^5.5.0"
   }
 }

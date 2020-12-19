@@ -1,0 +1,180 @@
+.wrapper
+    padding: 0 7%
+.creating
+    display: grid
+    grid-template-columns: 3fr 1fr
+    justify-content: stretch
+    &__icons
+        display: grid
+        grid-template-columns: repeat(9,1fr)
+        gap: 20px 20px
+        width: 85%
+        justify-items: center
+        margin: 60px 0
+    &__image
+        width: 262px
+        height: 340px
+        box-shadow: 0px 0px 15.0383px rgba(0, 0, 0, 0.25)
+        &_yellow
+            background: linear-gradient(180deg, #F5FFBA 47.92%, #FFFFFF 100%)
+        &_pink
+            background: linear-gradient(180deg, #FFBAFC 47.92%, #FFFFFF 100%)
+        &_white
+            background: white
+        &_blue
+            background: linear-gradient(180deg, #BAFFF3 47.92%, #FFFFFF 100%)
+        .layoutIcons
+            padding: 10px 0
+            display: grid
+            grid-template-columns: repeat(5,1fr)
+            justify-items: center
+    &__image-form 
+        background-color: white
+        width: 243px
+        height: 245px
+        margin: 10px
+        position: relative
+        .image__form
+            height: 245px
+    &__add-image
+        font-size: 120px
+        line-height: 245px
+        display: flex
+        align-content: center
+        justify-content: center
+        color: rgba(237, 237, 237, 1)
+        &:hover
+            cursor: pointer
+    &__inputs
+        .input-form
+            border-bottom: 1.5px solid #B0B0B0
+            width: 85%
+            padding: 10px
+            font-size: 20px
+            font-weight: normal
+            font-family: 'Spartan', sans-serif
+            color: #7AD647
+            &::placeholder
+                color: #7AD647
+        .input-length
+            text-align: center
+            margin-top: 5px
+            color: #7AD647
+            font-size: 13px
+        .inputs__form-describe
+            margin-top: 40px
+
+     
+.image
+    &__picture
+        width: 243px
+        height: 245px
+        position: absolute
+    &__form-icons, &__form-text
+        position: absolute
+    &__form-text
+        color: white
+        margin: 10px
+        display: flex
+        &_top
+            flex-direction: column-reverse
+            top: 0
+        &_bottom
+            bottom: 0
+            flex-direction: column
+    &__form-describe
+        margin: 5px 0
+        font-size: 15px
+    &__form-name
+        font-size: 25px
+        font-weight: bold
+    &__form-icons
+        left: 60px
+        top: 100px
+        display: flex
+        grid-gap: 30px
+
+.icon-share , .icon-upload
+    &:hover
+        cursor: pointer
+
+.item
+    position: relative
+    &__form
+        font-size: 10px
+        font-weight: 400
+        position: absolute
+        bottom: 44px
+        background-color: white
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 10px
+        z-index: 1
+
+    &__icon
+        cursor: pointer
+.form
+    font-family: 'Spartan', sans-serif
+    &__link
+        font-size: 15px
+        line-height: 11px
+        color: black
+        padding: 0 7px
+        border-radius: 10px
+        font-family: 'Spartan'
+        &::placeholder
+            color: #A2A2A2
+    &__button
+        background: #5C6BC0
+        border-radius: 5px
+        padding: 6px 20px
+        text-align: center
+        color: white
+        margin: 7px
+        &:hover
+            cursor: pointer
+
+.images-form
+    display: grid
+    margin: 50px 0
+    grid-template-columns: repeat(4,1fr)
+    grid-gap: 3%
+    &__item
+        &:hover
+            cursor: pointer
+            box-shadow: 0px 0px 11.4796px rgba(0, 0, 0, 0.25)
+    &__border
+        box-shadow: 0px 0px 11.4796px rgba(0, 0, 0, 0.25)
+
+.item
+    .custom
+        &__icon
+            min-height: 35px
+            min-width: 35px
+            border-radius: 50%
+            background-color: #5C6BC0
+            text-align: center
+            color: white
+            font-size: 20px
+            display: flex
+            align-items: center
+            justify-content: center
+            &:hover
+                cursor: pointer
+            &_size
+                width: 35px
+                height: 35px
+                &:hover
+                    cursor: pointer
+        &__image
+            display: block
+            color: #A2A2A2
+            margin-top: 10px
+            &:hover
+                cursor: pointer
+        &__form
+            padding: 15px 20px
+
+.hide
+    display: none
+.show
+    display: flex

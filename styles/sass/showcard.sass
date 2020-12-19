@@ -1,0 +1,42 @@
+.show-card
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    grid-row-gap: 40px
+    padding: 30px 7%
+    background: linear-gradient(180deg, #D7A4FF 0%, #AEFFB3 100%)
+    &__card
+        max-width: 200px
+        max-height: 260px
+    &__image-form, &__picture
+        width: 182px
+        height: 187px
+    &__form
+        height: 185px
+        position: relative
+    &__form-describe
+        font-size: 10px
+    &__form-name
+        font-size: 20px
+    &__share
+        position: absolute
+        &:hover
+            cursor: pointer
+    &__picture
+        position: absolute
+.image
+    &__picture
+        position: absolute
+        width: 20px
+        height: 20px
+        right: 0
+        top: 0
+        &:hover
+            cursor: pointer
+
+
+.image
+    &__picture
+        &_hover
+            &:hover
+                cursor: pointer
+

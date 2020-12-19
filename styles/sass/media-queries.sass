@@ -1,0 +1,65 @@
+@media only screen and (max-width: 932px)
+    .images-form
+        grid-template-columns: repeat(3, 1fr)
+        justify-items: center
+    .creating
+        margin-top: 100px
+    .show-card
+        grid-template-columns: repeat(3, 1fr)
+        justify-items: center
+@media only screen and (max-width: 860px)
+    .creating__icons
+        grid-template-columns: repeat(6, 1fr)
+    .about__cards
+        grid-template-columns: repeat(2, 1fr)
+
+
+@media only screen and (max-width: 720px)
+    .creating__icons 
+        grid-template-columns: repeat(5, 1fr)
+    .show-card 
+        grid-template-columns: repeat(2, 1fr)
+    .main-text 
+        grid-template-columns: 4fr 1fr 4fr
+
+@media only screen and (max-width: 680px)
+    .images-form 
+        grid-template-columns: repeat(2, 1fr)
+    .creating 
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column-reverse
+        &__image
+            margin: 50px auto
+    .creating__inputs .input-form, .creating__icons
+        width: 100%
+        
+@media only screen and (max-width: 550px)
+    .main-text 
+        grid-template-columns: 1fr
+        .row
+            margin-top: 40px
+    .show-card
+        grid-row-gap: 0
+        padding: 0
+@media only screen and (max-width: 470px)
+    .footer
+        &__container
+            flex-direction: column
+        &__text
+            min-width: 0
+            margin: auto
+        &__link
+            text-align: center
+            margin: 20px 
+    .form__link
+        width: 120px
+
+@media only screen and (max-width: 440px)
+    .images-form, .show-card, .about__cards
+        grid-template-columns: 1fr
+    .about__cards
+        .creating__image
+            margin: 10px auto
+    .form__link
+        width: 110px

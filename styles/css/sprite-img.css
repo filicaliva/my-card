@@ -1,0 +1,45 @@
+.bg-Group_8 {
+    width: 200px; height: 260px;
+    background: url('css_sprites-img.png') -10px -10px;
+}
+
+
+.bg-Group_7 {
+    width: 200px; height: 260px;
+    background: url('css_sprites-img.png') -230px -10px;
+}
+
+
+.bg-Group_6 {
+    width: 200px; height: 260px;
+    background: url('css_sprites-img.png') -450px -10px;
+}
+
+
+.bg-Group_5 {
+    width: 200px; height: 260px;
+    background: url('css_sprites-img.png') -10px -290px;
+}
+
+
+.bg-Group_4 {
+    width: 200px; height: 260px;
+    background: url('css_sprites-img.png') -230px -290px;
+}
+
+.bg-Group_3 {
+    width: 200px; height: 260px;
+    background: url('css_sprites-img.png') -450px -290px;
+}
+
+
+.bg-Group_2 {
+    width: 200px; height: 260px;
+    background: url('css_sprites-img.png') -670px -10px;
+}
+
+
+.bg-Group_1 {
+    width: 200px; height: 260px;
+    background: url('css_sprites-img.png') -670px -290px;
+}
