@@ -1,46 +1,12 @@
-.bg-Group_5 {
-    width: 200px; height: 260px;
-    background: url('css_sprites.png') -10px -10px;
-}
-
-
-.bg-Group_8 {
-    width: 200px; height: 260px;
-    background: url('css_sprites.png') -230px -10px;
-}
-
-
-.bg-Group_7 {
-    width: 200px; height: 260px;
-    background: url('css_sprites.png') -450px -10px;
-}
-
-
-.bg-Group_6 {
-    width: 200px; height: 260px;
-    background: url('css_sprites.png') -10px -290px;
-}
-
-
-.bg-Group_1 {
-    width: 200px; height: 260px;
-    background: url('css_sprites.png') -230px -290px;
-}
-
-
-.bg-Group_4 {
-    width: 200px; height: 260px;
-    background: url('css_sprites.png') -450px -290px;
-}
-
-
-.bg-Group_3 {
-    width: 200px; height: 260px;
-    background: url('css_sprites.png') -670px -10px;
-}
-
-
-.bg-Group_2 {
-    width: 200px; height: 260px;
-    background: url('css_sprites.png') -670px -290px;
-}
+.group-1, .group-2, .group-3, .group-4, .group-5, 
+.group-6, .group-7, .group-8
+{ max-width: 100%; background-size: 100%; background-image: url('png.png'); }
+ 
+.group-5 { background-position: 0 0%; background-size: 100%; }
+.group-8 { background-position: 0 14.285714%; background-size: 100%; }
+.group-7 { background-position: 0 28.571429%; background-size: 100%; }
+.group-6 { background-position: 0 42.857143%; background-size: 100%; }
+.group-1 { background-position: 0 57.142857%; background-size: 100%; }
+.group-4 { background-position: 0 71.428571%; background-size: 100%; }
+.group-3 { background-position: 0 85.714286%; background-size: 100%; }
+.group-2 { background-position: 0 100%; background-size: 100%; }

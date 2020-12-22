@@ -7,6 +7,7 @@ export const cards = [
         posText: 'top',
         link: 'donald',
         describe: '45th U.S. President',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -53,6 +54,7 @@ export const cards = [
         posText: 'top',
         link: 'biden',
         describe: 'President of the US',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -99,6 +101,7 @@ export const cards = [
         posText: 'top',
         link: 'mcafe',
         describe: 'He founded McAfee',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -145,6 +148,7 @@ export const cards = [
         posText: 'bottom',
         link: 'brezhneva',
         describe: 'Pop-singer',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -182,6 +186,7 @@ export const cards = [
         posText: 'top',
         link: 'bieber',
         describe: 'Canadian singer-songwriter',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -228,6 +233,7 @@ export const cards = [
         posText: 'bottom',
         link: 'eminem',
         describe: 'American rapper',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -269,6 +275,7 @@ export const cards = [
         posText: 'bottom',
         link: 'apple',
         describe: 'Technology company',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -315,6 +322,7 @@ export const cards = [
         posText: 'bottom',
         link: 'maduro',
         describe: 'President of Venezuela',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -351,6 +359,7 @@ export const cards = [
         posText: 'bottom',
         link: 'conor',
         describe: 'Boxer',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -387,6 +396,7 @@ export const cards = [
         posText: 'bottom',
         link: 'hillton',
         describe: 'American media personality',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -428,6 +438,7 @@ export const cards = [
         posText: 'bottom',
         link: 'sobchak',
         describe: 'Russian public figure',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -469,6 +480,7 @@ export const cards = [
         posText: 'bottom',
         link: 'kischuk',
         describe: 'Russian singer',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -505,6 +517,7 @@ export const cards = [
         posText: 'bottom',
         link: 'morgenstern',
         describe: 'Russian rapper',
+        showForm: 'hide',
         icons: [
             {
                 name: "instagram",
@@ -536,6 +549,7 @@ export const cards = [
         posText: 'top',
         link: 'eilish',
         describe: 'American singer-songwriter',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -577,6 +591,7 @@ export const cards = [
         posText: 'bottom',
         link: 'lapenko',
         describe: 'Comedian actor',
+        showForm: 'hide',
         icons: [
             {
                 name: "instagram",
@@ -603,6 +618,7 @@ export const cards = [
         posText: 'bottom',
         link: 'prushkin',
         describe: 'Russian musician',
+        showForm: 'hide',
         icons: [
             {
                 name: "instagram",
@@ -634,6 +650,7 @@ export const cards = [
         posText: 'bottom',
         link: 'netflix',
         describe: 'Content platform',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -670,6 +687,7 @@ export const cards = [
         posText: 'bottom',
         link: 'unicef',
         describe: 'Humanitarian aid organization',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -711,6 +729,7 @@ export const cards = [
         posText: 'bottom',
         link: 'aguilera',
         describe: 'American singer',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
@@ -752,6 +771,7 @@ export const cards = [
         posText: 'bottom',
         link: 'disney',
         describe: 'The cartoon company',
+        showForm: 'hide',
         icons: [
             {
                 name: "www",
