@@ -45,6 +45,8 @@
         color: rgba(237, 237, 237, 1)
         &:hover
             cursor: pointer
+            box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.2)
+            color: #c8c7c7
     &__inputs
         .input-form
             border-bottom: 1.5px solid #B0B0B0
@@ -53,19 +55,25 @@
             font-size: 20px
             font-weight: normal
             font-family: 'Spartan', sans-serif
-            color: #7AD647
+            color: #475993
             &::placeholder
-                color: #7AD647
+                color: #475993
         .input-length
             text-align: center
             margin-top: 5px
-            color: #7AD647
+            color: #475993
             font-size: 13px
         .inputs__form-describe
             margin-top: 40px
 
      
 .image
+    &__upload
+        position: absolute
+        right: 10px
+        top: 10px
+        &:hover
+            cursor: pointer
     &__picture
         width: 243px
         height: 245px
@@ -93,6 +101,30 @@
         top: 100px
         display: flex
         grid-gap: 30px
+
+.done
+    background: linear-gradient(180deg, #8A9CFF 0%, #FF6C96 100%)
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+    border-radius: 15px
+    z-index: 1
+    max-height: 70px
+    max-width: 300px
+    position: absolute
+    color: white
+    font-family: 'Roboto'
+    font-weight: 700
+    padding: 10px
+    font-size: 12px
+    right: 0
+    left: 0
+    margin: auto
+    &__text
+        margin-top: 5px
+    &__cancel
+        text-align: right
+        &:hover
+            cursor: pointer
+        
 
 .icon-share , .icon-upload
     &:hover
@@ -139,11 +171,12 @@
     grid-template-columns: repeat(4,1fr)
     grid-gap: 3%
     &__item
+        box-shadow: 0px 0px 11.4796px rgba(0, 0, 0, 0.25)
         &:hover
             cursor: pointer
-            box-shadow: 0px 0px 11.4796px rgba(0, 0, 0, 0.25)
+            box-shadow: 0px 0px 11.4796px rgba(0, 0, 0, 0.5)
     &__border
-        box-shadow: 0px 0px 11.4796px rgba(0, 0, 0, 0.25)
+        box-shadow: 0px 0px 11.4796px rgba(0, 0, 0, 0.5)
 
 .item
     .custom
@@ -156,6 +189,7 @@
             color: white
             font-size: 20px
             display: flex
+            padding-top: 3px
             align-items: center
             justify-content: center
             &:hover
@@ -178,3 +212,5 @@
     display: none
 .show
     display: flex
+.showDone
+    display: block

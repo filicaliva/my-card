@@ -49,6 +49,7 @@
         &__text
             min-width: 0
             margin: auto
+            margin-top: 30px
         &__link
             text-align: center
             margin: 20px 
@@ -56,10 +57,15 @@
         width: 120px
 
 @media only screen and (max-width: 440px)
-    .images-form, .show-card, .about__cards
+    .wrapper
+        padding: 0
+    .about__cards
         grid-template-columns: 1fr
     .about__cards
         .creating__image
             margin: 10px auto
     .form__link
         width: 110px
+    .show-card, .images-form
+        grid-template-columns: 1fr 1fr
+

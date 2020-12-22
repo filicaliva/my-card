@@ -15,6 +15,7 @@ export default function Creating() {
     const [showForm, setShowForm] = useState(true)
     const [showCustomForm, setShowCustomForm] = useState(true)
     const [customHandleForm, setHandleCustomForm] = useState('hide')
+    const [doneForm, setDoneForm] = useState('hide')
     const [customValue, setCustomValue] = useState('')
 
     const [file, setFile] = useState({})
@@ -26,7 +27,7 @@ export default function Creating() {
 
     const [bgColor, setBgColor] = useState('yellow')
     const [posText, setPosText] = useState('bottom')
-    const titleName = ['fb', 'instagram', 'linkedin', 'telegram', 'twitter', 'vk', 'snapchat', 'penguin', 'messenger', 'line', 'tik_tok', 'whatsapp', 'youtube', 'discord', 'skype', 'viber', 'icq', 'wechat', 'www', 'behance', 'dribble', 'github', 'kakao', 'badoo', 'reddit', 'tumblr', 'gmail']
+    const titleName = ['fb', 'instagram', 'linkedin', 'telegram', 'twitter', 'vk', 'snapchat', 'penguin', 'messenger', 'line', 'tik_tok', 'whatsapp', 'youtube', 'discord', 'skype', 'viber', 'icq', 'wechat', 'www', 'behance', 'dribble', 'github', 'kakao', 'reddit', 'gmail', 'badoo', 'tumblr']
 
     const [icons, setIcons] = useState(() => {
         const arr = [];
@@ -172,7 +173,10 @@ export default function Creating() {
         }
 
 
-        renderPdf(data, file, customIcon)
+        renderPdf(data, file, customIcon).then(() => {
+            setDoneForm('showDone')
+            setShowForm(true)
+        })
     }
 
 
@@ -292,20 +296,30 @@ export default function Creating() {
 
                 <div className={`creating__image creating__image_${bgColor}`}>
                     <div className="creating__image-form">
+                        <div className={`done ${doneForm}`}>
+                            <div className="done__cancel" onClick={() => { setDoneForm('hide') }} >x</div>
+                            <div className="done__h5">DONE 👍</div>
+                            <div className="done__text">You have successfully saved my-card 👌</div>
+                        </div>
                         <input id='addImage' type="file" accept="image/jpeg" onChange={(e) => showImage(e)} hidden />
                         <label htmlFor="addImage" className={`creating__add-image ${showForm === false ? 'hide' : 'show'}`} >+</label>
+
+
 
                         <div className={`image__form ${showForm === true ? 'hide' : 'show'}`}>
                             <img src={link} className="image__picture" />
 
 
-                            <div className="image__form-icons">
+                            {/* <div className="image__form-icons">
                                 <label htmlFor="addImage" >
                                     <UploadIcon className='icon-upload' />
                                 </label>
 
                                 <ShareIcon className='icon-share' onClick={() => preparePdf()} />
-                            </div>
+                            </div> */}
+
+                            <img src='/icons/download.svg' onClick={() => preparePdf()} className='image__upload' />
+
 
                             <div className={`image__form-text image__form-text_${posText}`}>
                                 <p className="image__form-describe">{describe}</p>

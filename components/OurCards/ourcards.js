@@ -5,7 +5,7 @@ export const cards = [
         bgColor: 'yellow',
         posText: 'bottom',
         link: 'slava',
-        describe: 'CEO my-card',
+        describe: 'Idea and CEO',
         icons: [
             {
                 name: "linkedin",

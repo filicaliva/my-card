@@ -13,7 +13,7 @@ export default function ShowCard() {
                                 <div className=' show-card__form'>
                                     <img src={`/img/${item.link}.jpg`} className="show-card__picture" />
 
-                                    <img src='/icons/upload.svg' onClick={()=>renderPdf(item)} className='image__picture'/>
+                                    <img src='/icons/download.svg' onClick={()=>renderPdf(item)} className='image__picture'/>
                                     <div className={`image__form-text image__form-text_${item.posText}`}>
                                         <p className="image__form-describe show-card__form-describe">{item.describe}</p>
                                         <p className="image__form-name show-card__form-name">{item.name}</p>
