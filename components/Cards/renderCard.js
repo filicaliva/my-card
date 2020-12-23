@@ -43,7 +43,7 @@ export const renderPdf = async (item, file, customIcon) => {
     }
 
     doc.addImage(base.myCard, 'png', 517, 97, 60, 76)
-    doc.link(517, 97, 60, 76, { url: 'https://www.figma.com/file/HEBZAQLqQikRB8Wxk5guya/MyCard?node-id=299%3A13127' })
+    doc.link(517, 97, 60, 76, { url: 'http://my-card.xyz/' })
 
 
     const describeText = item.posText === 'bottom' ? 538 : 185
