@@ -1,3 +1,6 @@
+const optimizedImages = require('next-optimized-images');
+module.exports = optimizedImages();
+
 module.exports = {
   webpack(config) {
     config.module.rules.push({
@@ -6,5 +9,14 @@ module.exports = {
     });
 
     return config;
+  },
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      '/team': { page: '/team' }
+    }
   },
 };

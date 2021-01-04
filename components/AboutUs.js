@@ -1,5 +1,4 @@
 import {cards} from './OurCards/ourcards'
-import Image from 'next/image'
 
 export default function  AboutUs() {
     return(
@@ -32,7 +31,7 @@ export default function  AboutUs() {
                                         item.icons.map((link) => {
                                             return (
                                                 <a key={link.name} href={`${link.href}`} >
-                                                    <Image src={`/icons/${link.name}.svg`} width='20px' height='20px' />
+                                                    <img src={`/icons/${link.name}.svg`} width='20px' height='20px' />
                                                 </a>
                                             )
                                         })

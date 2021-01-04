@@ -65,7 +65,7 @@ export const renderPdf = async (item, file, customIcon) => {
         const el = item.icons[i];
         if (i < 12) {
             doc.addImage(base[el.name], 'png', 23 + 87 * (i <= 6 ? i : i - 6), (i <= 6 ? 707 : 780), 50, 50)
-            doc.link(23 + 87 * (i <= 6 ? i : i - 6), (i <= 6 ? 707 : 780), 50, 50, { url: `${el.href}` });
+            doc.link(23 + 87 * (i <= 6 ? i : i - 6), (i <= 6 ? 707 : 780), 50, 50, { url: `${el.value}` });
 
         }
         position = i;
@@ -78,7 +78,7 @@ export const renderPdf = async (item, file, customIcon) => {
         let i = ++position;
         let image = await fileToBase64(customIcon.file.target.files[0]);
         doc.addImage(image, 'jpg', 23 + 87 * (i <= 6 ? i : i - 6), (i <= 6 ? 707 : 780), 50, 50)
-        doc.link(23 + 87 * (i <= 6 ? i : i - 6), (i <= 6 ? 707 : 780), 50, 50, { url: `${customIcon.href}` });
+        doc.link(23 + 87 * (i <= 6 ? i : i - 6), (i <= 6 ? 707 : 780), 50, 50, { url: `${customIcon.link}` });
     }
 
     await fetch('https://pure-citadel-12988.herokuapp.com/',

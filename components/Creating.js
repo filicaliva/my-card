@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import Image from 'next/image'
+
 import { renderPdf } from '../components/Cards/renderCard'
 import ShareIcon from '../public/icons/share.svg'
 import UploadIcon from '../public/icons/upload.svg'
@@ -167,11 +167,12 @@ export default function Creating() {
         let customIcon = undefined
         if (Object.keys(customFile).length !== 0) {
             customIcon = {
-                link: customLink,
+                link: customValue,
                 file: customFile
             }
         }
 
+        
 
         renderPdf(data, file, customIcon).then(() => {
             setDoneForm('showDone')
@@ -231,7 +232,7 @@ export default function Creating() {
                                                 onClick={() => handleForm(item.id, false)}
                                             />
                                         </div>
-                                        <Image
+                                        <img
                                             src={`/icons/${item.name}.svg`}
                                             className='item__icon'
                                             onClick={(e) => handleForm(item.id, true)}
@@ -333,7 +334,7 @@ export default function Creating() {
                                 icons.map((item) => {
                                     if (item.value !== '') {
                                         return (
-                                            <Image
+                                            <img
                                                 src={`/icons/${item.name}.svg`}
                                                 width='30px'
                                                 height='30px'

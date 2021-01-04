@@ -1,0 +1,4 @@
+PassengerNodejs /home/m/maestrk2/.local/bin/test
+PassengerAppRoot /home/m/maestrk2/test/public_html
+PassengerAppType node
+PassengerStartupFile index.html

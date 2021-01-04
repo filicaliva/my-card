@@ -1,6 +1,5 @@
 import { cards } from '../Cards/cards'
 import { renderPdf } from './renderCard'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 export default function ShowCard() {
@@ -68,7 +67,7 @@ export default function ShowCard() {
                                         item.icons.map((link) => {
                                             return (
                                                 <a key={link.name} href={`${link.href}`} >
-                                                    <Image src={`/icons/${link.name}.svg`} width='16px' height='16px' />
+                                                    <img src={`/icons/${link.name}.svg`} width='16px' height='16px' />
                                                 </a>
                                             )
                                         })
