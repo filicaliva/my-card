@@ -319,7 +319,7 @@ export default function Creating() {
                                 <ShareIcon className='icon-share' onClick={() => preparePdf()} />
                             </div> */}
 
-                            <img src='/icons/download.svg' onClick={() => preparePdf()} className='image__upload' />
+                            <img src='/icons/download_thin.svg' onClick={() => preparePdf()} className='image__upload' />
 
 
                             <div className={`image__form-text image__form-text_${posText}`}>
