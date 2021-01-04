@@ -27,7 +27,7 @@ export default function Footer() {
                 <div className="social-media">
                     <div className="social-media__link">
                             <img src="/icons/fb.svg" width='35px'  />
-                        <a key="tik_tok" href="https://vm.tiktok.com/ZS7NxsUd/" >
+                        <a key="tik_tok" href="https://www.tiktok.com/@mycard2021?_d=d9398de3llf7bl&language=ru&sec_uid=MS4wLjABAAAA5fh2U6TKirlDFjS05UJaslpgcczBUIiVzZ-sw-ln3zWU5qTzwEVzSK7ViCew4JQq&share_author_id=6911308918212494337&u_code=dg8dmk26lk9k9m&timestamp=1609768854&user_id=6911308918212494337&sec_user_id=MS4wLjABAAAA5fh2U6TKirlDFjS05UJaslpgcczBUIiVzZ-sw-ln3zWU5qTzwEVzSK7ViCew4JQq&utm_source=more&utm_campaign=client_share&utm_medium=android&share_app_name=musically&share_iid=6912079165790390017&share_link_id=d303c32f-60f8-430d-a17a-293b4791a762&source=h5_m" >
                             <img src="/icons/tik_tok.svg" width='35px'  />
                         </a>
                             <img src='/icons/youtube.svg' width='35px' />
